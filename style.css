@@ -1,0 +1,136 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+ 
+  * {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
+    background-image: url("./images/bg-pattern-desktop.svg");
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+.logo > img {
+    padding: 2rem 0 2rem 2rem;
+}
+
+.container {
+    display: grid;
+    flex-direction: column;
+}
+
+.hero--photo {
+    max-width: 23.438rem;
+    max-height: 15.625rem;
+    overflow: hidden;   
+}
+.hero--photo > img {
+    /* width: auto;
+    height: auto; */
+    object-fit: cover;
+    /* object-position: -2.3rem -2rem; */
+}
+
+.main--info {
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.main--info > * {
+    padding: 0.5rem;
+}
+
+.main--title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 2.625rem;
+    letter-spacing: 0.677rem;
+    color: #423A3A;
+    text-transform: capitalize;
+}
+
+.main--title > span {
+    color: #CE9898;
+    font-weight: 300;
+}
+
+.main--text {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    color: #CE9898;
+}
+
+.main--form {
+    display: inline-flex;
+    margin-top: 1rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.main--form > * {
+    align-items: center;
+    color: #CE9898;
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+}
+.main--input_form {
+    position: relative;
+    border-radius: 2rem;
+    border-color: #CE9898;
+    border-width: 0.063rem;
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    opacity: 0.5;
+}
+.main--submit_btn {
+    position: absolute;
+    right: 2rem;
+    /* align-content: center; */
+    width: 3.75rem;
+    height: 3rem;
+    background-image: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0rem 0.938rem 1.25rem rgba(198, 110, 110, 0.247569);
+    border-radius: 1.75rem;
+    border: none;
+}
+
+.main--submit_btn > img {
+    /* padding: 0.75rem; */
+    margin: auto;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
