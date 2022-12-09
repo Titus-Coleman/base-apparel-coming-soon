@@ -9,34 +9,35 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    
-  </header>
-  <main>
-    <picture class="logo">
-      <img src="./images/logo.svg" alt="base apparel logo">
-    </picture>
-    <div class="container">
-      <picture class="hero--photo">
-        <img src="./images/hero-mobile.jpg" alt="hero model photo" srcset="./images/hero-desktop.jpg" class="main--photo">
+  <main class="container">
+      <picture class="logo">
+        <img src="./images/logo.svg" alt="base apparel logo">
+      </picture>
+      <picture class="hero--photo grid-row-span-2">
+        <img 
+            srcset="./images/hero-mobile.jpg 480w, ./images/hero-desktop.jpg 600w"    
+            sizes="(min-width: 480px) 480w"
+            src="./images/hero-mobile.jpg" 
+            alt="hero model photo">
       </picture>
      <section class="main--info">
       <h1 class="main--title"><span>WE'RE </span>COMING SOON</h1>
       <p class="main--text"> Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      <form class="main--form" action="" method="get">
-        <input class="main--input_form" type="email" name="Email" id="email" placeholder="Email Address">
+      <form id="form" class="main--form" action="" method="post">
+        <div class="form--group">
+        <input class="main--input_form" type="text" name="email" id="email" placeholder="Email Address">
         <button type="submit" class="main--submit_btn">
           <img src="./images/icon-arrow.svg" alt="">
         </button>
+        <div id="error" class="error hidden">Please enter a valid email address.</div>
+        <img id="warning--icon" src="./images/icon-error.svg" alt="" class="error warning--icon hidden">
+      </div>
       </form>
-      
       </section>
-
-
-    </div>
   </main>
   <footer>
     <p class="attribution">
