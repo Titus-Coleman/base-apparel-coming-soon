@@ -16,14 +16,12 @@
 
   main {
     background-image: url("./images/bg-pattern-desktop.svg");
-    /* overflow: hidden; */
     background-size: contain;
     background-attachment: fixed;
     
   }
 
   body {
-    /* display: grid; */
     place-content: center;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -103,7 +101,6 @@
 }
 
 .form--group {
-    /* display: inline-flex; */
     position: relative;
     padding: 1rem;
     overflow: hidden;
@@ -157,7 +154,6 @@
 }
 
 .main--submit_btn > img {
-    /* padding: 0.75rem; */
     margin: auto;
 }
 

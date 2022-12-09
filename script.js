@@ -1,8 +1,3 @@
-import { createClient } from '@supabase/supabase-js'
-
-// Create a single supabase client for interacting with your database
-const supabase = createClient('https://xyzcompany.supabase.co', 'public-anon-key')
-
 const isValidEmail = (email) => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
@@ -24,6 +19,7 @@ const validateInputs = () => {
         document.getElementById("error").classList.add("hidden");
         document.getElementById("warning--icon").classList.add("hidden");
         console.log('good email');
+        document.getElementById('form').reset();
     }
 };
 
@@ -31,6 +27,6 @@ const validateInputs = () => {
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     validateInputs();
-    document.getElementById('form').reset();
+    
 });
 
