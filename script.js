@@ -1,7 +1,5 @@
-// Create a single supabase client for interacting with your database
 const {createClient} = supabase;
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhyZ3l0ZHhhcXNsYmtyaXpjeXFjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzA2MTcwMDUsImV4cCI6MTk4NjE5MzAwNX0.ybtD1ivAXolbFc2SHRMFKJ4FLmre1mwMlEf8J3CAwxI'
-
+SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhyZ3l0ZHhhcXNsYmtyaXpjeXFjIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzA2MTcwMDUsImV4cCI6MTk4NjE5MzAwNX0.ybtD1ivAXolbFc2SHRMFKJ4FLmre1mwMlEf8J3CAwxI";
 supabase = createClient('https://hrgytdxaqslbkrizcyqc.supabase.co', SUPABASE_KEY);
 
 const isValidEmail = (email) => {
@@ -11,6 +9,9 @@ const isValidEmail = (email) => {
 
 const form = document.querySelector('form');
 const emailInput = document.querySelector('input[name="email"]');
+const modal = document.querySelector('.modal');
+const openModal = document.querySelector('.open-button');
+const closeModal = document.querySelector('.close-button');
 
 let isFormValid = false;
 
@@ -46,8 +47,15 @@ form.addEventListener('submit', async (e) => {
        
         const {error} = await supabase.from('entries').insert([submission], {returning: 'minimal'})
         console.log(submission)
+        modal.showModal();
+
   
     }
     
 });
 
+closeModal.addEventListener('click', ()=> {
+    modal.close();
+    document.getElementById('form').reset();
+
+})
