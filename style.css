@@ -61,10 +61,6 @@
 }
 
 .main--info {
-    /* display: flex;
-    flex-direction: column; */
-    /* width: 20rem;
-    height: 20rem; */
     margin: 2rem;
     justify-content: center;
     align-items: center;
@@ -160,9 +156,28 @@
 button {
   cursor: pointer;
 }
+button:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
 
 .hidden {
   display: none;
+}
+
+.modal {
+  position: absolute;
+  left: 10rem;
+  top: 30rem;
+}
+
+.modal button {
+  background-image: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+  box-shadow: 0rem 0.938rem 1.25rem rgba(198, 110, 110, 0.247569);
+  border-radius: 1.75rem;
+  border: transparent;
+  padding: 1rem
 }
 
 @media (max-width: 420px) {
@@ -185,6 +200,7 @@ button {
     height: auto;
     width: auto;
   }
+
 }
 
 .attribution {
