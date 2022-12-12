@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 ![Post Submit Modal](./Completed-Screenshots/Screenshot%20from%202022-12-12%2014-17-04.png)
-![Supabase backend with email capture](./Completed-Screenshots/Screenshot%20from%202022-12-12%2014-17-04.png)
+![Supabase backend with email capture](./Completed-Screenshots/Screenshot%202022-12-12%20at%2014-20-52%20BaseApparel-Example%20Supabase.png)
 ![Desktop - Error](./Completed-Screenshots/Base_Apparel_coming_soon_page_desktop-error.png)
 ![Desktop](./Completed-Screenshots/Base_Apparel_coming_soon_page_desktop.png)
 ![Mobile - Error](./Completed-Screenshots/Base_Apparel_coming_soon_page_mobile-error.png)
