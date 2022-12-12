@@ -13,9 +13,12 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 - [Author](#author)
 
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+
+Completed Frontend Mentor challenge with working email capture functionality using Supabase backend. Email addresses are fully validated and duplicate submissions are denied at the db. Once submitted, a modal popup is displayed to inform users and the form is reset upon closure.
+
+Note - security is weak due to exposed db key. For demo purposes only.
 
 ### The challenge
 
@@ -28,7 +31,8 @@ Users should be able to:
   - The email address is not formatted correctly
 
 ### Screenshot
-
+![Post Submit Modal](./Completed-Screenshots/Screenshot%20from%202022-12-12%2014-17-04.png)
+![Supabase backend with email capture](./Completed-Screenshots/Screenshot%20from%202022-12-12%2014-17-04.png)
 ![Desktop - Error](./Completed-Screenshots/Base_Apparel_coming_soon_page_desktop-error.png)
 ![Desktop](./Completed-Screenshots/Base_Apparel_coming_soon_page_desktop.png)
 ![Mobile - Error](./Completed-Screenshots/Base_Apparel_coming_soon_page_mobile-error.png)
@@ -47,10 +51,6 @@ Users should be able to:
 - CSS custom properties
 - CSS Grid
 - Mobile-first workflow
-
-### Continued development
-
-Next, I will be adding database functionality to collect emails via Supabase
 
 ### Author
 
